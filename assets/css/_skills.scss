@@ -1,0 +1,75 @@
+/* skills section styling */
+.skills {
+	.title {
+		&::after {
+			content: "what i know";
+		}
+	}
+	.skills__content {
+		.column {
+			width: calc(50% - 30px);
+		}
+		.column--left {
+			.skills__text {
+				font-size: 20px;
+				font-weight: 600;
+				margin-bottom: 10px;
+			}
+		}
+		.column--right {
+			.skills__bars {
+				margin-bottom: 15px;
+			}
+			.skills__info {
+				display: flex;
+				margin-bottom: 5px;
+				align-items: center;
+				justify-content: space-between;
+			}
+			span {
+				font-weight: 500;
+				font-size: 18px;
+			}
+			.skills__line {
+				height: 5px;
+				width: 100%;
+				background: #19a2b4;
+				position: relative;
+				&::before {
+					content: "";
+					position: absolute;
+					height: 100%;
+					left: 0;
+					top: 0;
+					background: #19a2b4;
+				}
+			}
+		}
+	}
+}
+.skills__content {
+	.column--right {
+		.skills__line {
+			a {
+				&::before {
+					width: 80%;
+				}
+			}
+			b {
+				&::before {
+					width: 70%;
+				}
+			}
+			c {
+				&::before {
+					width: 65%;
+				}
+			}
+			d {
+				&::before {
+					width: 50%;
+				}
+			}
+		}
+	}
+}

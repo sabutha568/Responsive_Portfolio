@@ -1,0 +1,61 @@
+
+$primaryColor : rgb(25, 162, 180);
+$primaryColor1 : rgb(66, 123, 131);
+$backgroundb : #111;
+$backgroundw : #fff;
+
+/* qualification section styling */
+.qualification {
+	color: #111;
+	.title {
+		&::after {
+			content: "my education";
+		}
+	}
+	.qualification__content {
+		.qualification__card {
+			width: calc(33% - 20px);
+			background: rgb(252, 252, 252);
+			text-align: center;
+			border-radius: 6px;
+			padding: 50px 25px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			&:hover {
+				background: #19a2b4;
+				.qualification__box {
+					transform: scale(1.05);
+				}
+				i {
+					color: #fff;
+				}
+				.text {
+					color: #fff;
+				}
+				p {
+					color: #fff;
+				}
+			}
+			.qualification__box {
+				transition: all 0.3s ease;
+			}
+			i {
+				font-size: 50px;
+				color: #19a2b4;
+				transition: color 0.3s ease;
+			}
+			.text {
+				color: rgb(19, 0, 0);
+				font-size: 25px;
+				font-weight: 500;
+				margin: 10px 0 7px 0;
+			}
+			.p {
+				color: rgb(19, 0, 0);
+				font-size: 35px;
+				font-weight: 500;
+				margin: 10px 0 7px 0;
+			}
+		}
+	}
+}
