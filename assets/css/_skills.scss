@@ -21,7 +21,6 @@
 				margin-bottom: 15px;
 			}
 			.skills__info {
-				display: flex;
 				margin-bottom: 5px;
 				align-items: center;
 				justify-content: space-between;
@@ -46,28 +45,29 @@
 			}
 		}
 	}
-}
-.skills__content {
-	.column--right {
-		.skills__line {
-			a {
-				&::before {
-					width: 80%;
+
+	.skills__content {
+		.column--right {
+			.skills__line {
+				a {
+					&::before {
+						width: 80%;
+					}
 				}
-			}
-			b {
-				&::before {
-					width: 70%;
+				b {
+					&::before {
+						width: 70%;
+					}
 				}
-			}
-			c {
-				&::before {
-					width: 65%;
+				c {
+					&::before {
+						width: 65%;
+					}
 				}
-			}
-			d {
-				&::before {
-					width: 50%;
+				d {
+					&::before {
+						width: 50%;
+					}
 				}
 			}
 		}
